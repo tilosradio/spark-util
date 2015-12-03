@@ -1,0 +1,8 @@
+language: java
+
+services:
+   - mongodb
+
+jdk:
+  - oraclejdk8
+
