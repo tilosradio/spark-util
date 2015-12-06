@@ -9,6 +9,7 @@
     <modules>
         <module>spark-util</module>
         <module>service-api</module>
+        <module>test-util</module>
     </modules>
 
     <properties>
