@@ -2,19 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>hu.tilos.radio</groupId>
     <artifactId>spark-util</artifactId>
     <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    
-      <properties>
-
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-
-    </properties>
-
+    <parent>
+        <groupId>hu.tilos.radio</groupId>
+        <artifactId>spark-common</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
     <dependencies>
         <dependency>
             <groupId>com.sparkjava</groupId>
@@ -68,6 +63,23 @@
             <artifactId>owasp-java-html-sanitizer</artifactId>
             <version>[r136,)</version>
         </dependency>
+
+     <dependency>
+            <groupId>net.tanesha.recaptcha4j</groupId>
+            <artifactId>recaptcha4j</artifactId>
+            <version>0.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mandrillapp.wrapper.lutung</groupId>
+            <artifactId>lutung</artifactId>
+            <version>0.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>hu.tilos.radio</groupId>
+            <artifactId>service-api</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.jsoup</groupId>

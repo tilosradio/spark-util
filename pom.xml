@@ -10,4 +10,27 @@
         <module>spark-util</module>
         <module>service-api</module>
     </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ssh-repository</id>
+            <url>scpexe://anzix.net//home/elek/wwwroot/zx.anzix.net/maven</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh-external</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
+    </build>
 </project>
