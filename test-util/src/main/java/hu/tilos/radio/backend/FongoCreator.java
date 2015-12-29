@@ -19,7 +19,7 @@ public class FongoCreator {
         } else {
             try {
                 String host = ConfigFactory.load().getString("mongo.host");
-                fongoRule = new FongoRule("tilos", true, new MongoClient(host));
+                fongoRule = new FongoRule("unit", true, new MongoClient(host));
             } catch (UnknownHostException e) {
                 throw new RuntimeException(e);
             }
